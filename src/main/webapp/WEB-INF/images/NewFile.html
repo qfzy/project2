@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 左隐藏菜单开始 -->
+<script language="JavaScript1.2">
+function move(x, y) {
+if (document.all) {
+object1.style.pixelLeft += x;
+object1.style.pixelTop  += y;}
+else
+if (document.layers) {
+document.object1.left += x;
+document.object1.top  += y;
+}};
+function position() {
+document.object1.left += -200;
+document.object1.top  += 0;
+document.object1.visibility = "show"
+};
+function makeStatic() {
+if (document.all) {object1.style.pixelTop=document.body.scrollTop+300}
+else {eval('document.object1.top=eval(window.pageYOffset+20)');}
+setTimeout("makeStatic()",0);}
+</script>
+</head>
+<body>
+<layer class="NS" onmouseover="move(580,0)" onmouseout="move(-580, 0)" top="20" visibility="hide" name="object1" left="0">
+ <script language="JavaScript1.2">
+if (document.all)
+document.write('<DIV ID="object1" style="Position : Absolute ;Left : -125px ;Top : 20px ;Width : 0px ;Z-Index : 20">')
+</script>
+ <table onMouseOver="move(120,0)" onMouseOut="move(-120, 0)" cellspacing="1" cellpadding="2" border="0">
+  <tr>
+   <td><table style="margin-left:10px" cellspacing="0" cellpadding="0" width="108" border="0">
+  <tr>
+   <td colspan="3"><img height="116" src="/v7sp/images/v7/leyubg1.gif" width="109" border="0"></td>
+  </tr>
+  <tr>
+   <td width="6"></td>
+    <td valign="top" width="96" >
+   <table cellspacing="0" cellpadding="0" width="90" align="center" border="0">
+    <tr>
+     <td height="30">
+     <table cellspacing="0" cellpadding="0" width="90" border="0">
+      <tr>
+       <td>
+       <img height="13" src="/v7sp/images/v7/qq_ico1.jpg" width="16"><span class="font_12"> 
+       <span style="font-size: 9pt">QQ咨询</span></span></td>
+      </tr>
+     </table>
+     </td>
+    </tr>
+   
+       <tr>
+     <td>
+       <div class="onqq"><div class="qqpic">
+<a href="http://wpa.qq.com/msgrd?v=3&uin=471662634&site=qq&menu=yes";target=_blank; ><img border="0" SRC='http://wpa.qq.com/pa?p=2:471662634:44' alt="TTS1"> 
+</a></div></div>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <div style="clear:both;"></div>
+    <div class="onqq"><div class="qqpic">
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=174339714&site=qq&menu=yes"><img border="0" src=" http://wpa.qq.com/pa?p=2:174339714:44" alt="点击这里给我发消息" title="点击这里给我发消息">
+</a></div></div>
+     </td>
+    </tr>
+     <tr>
+     <td>
+<div style="clear:both;"></div>
+    <div class="onqq"><div class="qqpic">
+<a href="http://wpa.qq.com/msgrd?v=3&uin=1543250383&site=qq&menu=yes"; target=_blank; ><img border="0" SRC=' http://wpa.qq.com/pa?p=2:1543250383:44' alt="TTS2">
+</a></div></div>
+     </td>
+    </tr>
+   </table>
+          <table cellspacing="0" cellpadding="0" width="90" align="center" border="0">
+    <tr>
+     <td height="30">
+     <table cellspacing="0" cellpadding="0" width="90" border="0">
+      <tr>
+       <td>
+       <img height="13" src="/v7sp/images/v7/qq_ico1.jpg" width="16"><span class="font_12"> 
+       <span style="font-size: 9pt">其他咨询</span></span></td>
+      </tr>
+     </table>
+     </td>
+    </tr>
+   </table>
+            <table cellspacing="0" cellpadding="0" width="90" align="center" border="0">
+              <tr>
+                <td height="30"><table cellspacing="0" cellpadding="0" width="90" border="0">
+                  <tr>
+                    <td><img height="20" src="/v7sp/images/v7/IcoLinkMobile.jpg" width="20"><span class="font_12"> 24H<span style="font-size: 9pt">电话</span></span></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td>13718855152</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+            </table></td>
+  
+  </tr>
+ </table>
+   </td>
+   <td valign="top" align="middle" width="12" rowspan="100">
+   <img height="109" src="/v7sp/images/v7/kefu.gif" width="20"> </td>
+  </tr>
+  <script language="JavaScript1.2">
+<!--
+if (document.all||document.layers)
+makeStatic();
+if (document.layers) {
+window.onload=position;
+}
+var sitems=new Array();
+var sitemlinks=new Array();
+function hl(n) {
+n.className='hl'}
+function n(h) {
+h.className='n'}
+//--></script>
+ </table>
+ <script language="JavaScript1.2">
+if (document.all)
+document.write('</DIV>')
+</script>
+</layer>
+<!-- 左隐藏菜单END -->
+</body>
+</html>

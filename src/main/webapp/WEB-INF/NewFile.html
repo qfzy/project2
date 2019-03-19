@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marquee 替代 -- 无间滚动</title>
+<style type="text/css">
+<!--
+#MyMarqueeX {width: 98%; height: 100px; overflow: hidden; margin: 0 auto 0 auto}
+#MyMarqueeX img {width: 105px; height: 80px; border: 2px solid #e6e6e6; padding: 1px; margin: 5px}
+#MyMarqueeY {width: 125px; height: 420px; overflow: hidden}
+#MyMarqueeY img {width: 105px; height: 80px; border: 2px solid #e6e6e6; padding: 1px; margin: 5px}
+-->
+</style>
+<link href="http://www.niceui.cn/Project/Common/Demo.css" rel="stylesheet" type="text/css" charset="utf-8" />
+<script type="text/javascript" src="http://www.niceui.cn/Project/Marquee/Marquee.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="case">
+<div class="title"><a href="#" class="r">Top</a>About Mudoo</div>
+我的博客 <a href="http://hi.baidu.com/mt20/" class="light">http://hi.baidu.com/mt20/</a>
+</div>
+<div class="case">
+<div class="title"><a href="#" class="r">Top</a>Marquee&nbsp;调用方法</div>
+<div class="b">new Marquee({obj, name, mode, interval, autoStart, hovering});</div>
+<ul class="info gray">
+   <li><span class="key">obj：</span><span class="type">Object</span>滚动对象&nbsp;&nbsp;(*必须)<!-- </li& amp; gt; -->
+   <li><span class="key">name：</span><span class="type">String</span>实例名&nbsp;&nbsp;(可选，默认随机)</li>
+   <li><span class="key">mode：</span><span class="type">String</span>滚动模式&nbsp;(x=水平, y=垂直)&nbsp;&nbsp;(可选，默认为x)</li>
+   <li><span class="key">interval：</span><span class="type">Number</span>滚动速度，越小速度越快&nbsp;&nbsp;(可选，默认 10，1秒=1000)</li>
+   <li><span class="key">speed：</span><span class="type">Number</span>滚动步长，越大数度越快&nbsp;&nbsp;(可选，默认 1像素)</li>
+   <li><span class="key">autoStart：</span><span class="type">Boolean</span>自动开始&nbsp;&nbsp;(可选，默认True)& amp; lt;/li>
+   <li><span class="key">hovering：</span><span class="type">Boolean</span>是否悬停&nbsp;&nbsp;(可选，默认True)& amp; lt;/li>
+</ul>
+    <br />
+</div>
+<div class="case">
+<div class="title"><a href="#" class="r">Top</a><a name="1" ></a>Marquee 演示&nbsp;-&nbsp;横向模 式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript: ;" onclick="Demo1.speed=Math.abs(Demo1.speed);">向左</a>-<a href="javascript: ;" onclick="Demo1.speed=-Math.abs(Demo1.speed);">向右</a>& nbsp;:&nbsp;<a href="javascript: ;" onclick="Demo1.Stop();">停止</a>-<a href="javascript: ;" onclick="Demo1.Start();">开始</a></div>
+<div id="MyMarqueeX">
+   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/1.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/2.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/3.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/4.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/5.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/6.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/7.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/8.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/9.gif" /></td>
+     <td><img src="http://www.niceui.cn/Project/Common/Images/10.gif" /></td>
+    </tr>
+   </table>
+</div>
+</div>
+
+<script language="javascript" type="text/javascript">
+//<!--
+/*********************************************
+- Marquee 演示
+*********************************************/
+var Demo1 = new Marquee({
+    obj : 'MyMarqueeX'
+});
+var Demo2 = new Marquee({
+    obj : 'MyMarqueeY',
+    mode : 'y'
+});
+//-->
+</script>
+</body>
+</html>
